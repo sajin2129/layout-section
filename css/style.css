@@ -205,16 +205,19 @@
     display: flex;
     list-style: none;
     justify-content: space-between;
+	margin-bottom:10px;
  }
  .five ul li{
-    width: 40px;
-    height: 30px;
+     width: 84px;
+    height: 50px;
     border: 1px solid rgb(172, 164, 164);
     border-radius: 6px;
-    line-height: 30px;
+    /* vertical-align: middle; */
+    line-height: 50px;
     text-align: center;
-
-cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
  }
  .five ul :nth-child(6){
     color: lightgray;
