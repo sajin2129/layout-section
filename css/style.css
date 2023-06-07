@@ -2,11 +2,7 @@
 	padding:0;
 	margin:0;
 	box-sizing:border-box;
-    /* font-family: 'Raleway', sans-serif; */
 	font-family: 'Open Sans', sans-serif;
-/* font-family: 'Raleway', sans-serif; */
-/* font-family: 'Roboto', sans-serif; */
-
 }
 .container{
 	width:1240px;
@@ -94,7 +90,9 @@
 }
 .border{
     border: 2px solid gray;
-    padding:0px 40px;
+    padding: 0px 40px;
+	padding-bottom:20px;
+	margin:10px;
     
 }
 .top{
@@ -103,19 +101,21 @@
     display: flex;
     justify-content: left;
     align-items: center;
+	    font-weight: 600;
 }
 .top li{
     list-style: none;
     padding: 6px 12px;
    font-size: 14px;
+   cursor:pointer;
 }
-.top li :nth-child(3){
+.top li:nth-child(5){
     color: gray;
 }
 
 .image1{
-    width:auto;
-      height:130.5vh;
+	overflow:hidden;
+	border-radius:14px;
       margin-bottom: 10px;
   }
 .image1 img{
@@ -128,8 +128,9 @@
   }
 
   .image{
-    width:auto;
-    height:64vh;
+	  overflow:hidden;
+	  border-radius:14px;
+ 
   }
   .image img{
     height:100%;
@@ -137,21 +138,21 @@
     padding:0px 0px;
 }
 .left{
-    height: 115vh;
+    gap:20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .rtop{
     width: 100%;
-    /* height: 10px; */
+    height: 10px;
     display: flex;
     justify-content: space-between;
     
 }
  .two{
     width: 100%;
-    /* height: 10px; */
+    height: 10px;
     display: flex;
     gap: 40px;
  }
@@ -184,7 +185,7 @@
 
  }
  .blk:hover{
-   outline:2px solid blue;
+   outline:2px solid black;
    outline-offset:2px;
  }
  .gry{
@@ -192,6 +193,12 @@
     height: 28px;
     border-radius: 50%;
     background-color: gray;
+	outline:2px solid white;
+	outline-offset:2px;
+ }
+  .gry:hover{
+   outline:2px solid gray;
+   outline-offset:2px;
  }
  .four{
     display: flex;
@@ -199,43 +206,35 @@
     height: 20px;
  }
  .chart-size{
+	 cursor:pointer;
     color: #5046E6;
  }
  .five ul{
     display: flex;
     list-style: none;
     justify-content: space-between;
-	margin-bottom:10px;
  }
  .five ul li{
-     width: 84px;
-    height: 50px;
+    width: 40px;
+    height: 30px;
     border: 1px solid rgb(172, 164, 164);
     border-radius: 6px;
-    /* vertical-align: middle; */
-    line-height: 50px;
+    line-height: 30px;
     text-align: center;
-    font-size: 16px;
-    font-weight: 600;
-    cursor: pointer;
+	 transition: 0.4s;
+
+cursor: pointer;
  }
  .five ul :nth-child(6){
     color: lightgray;
  }
- .five ul :nth-child(3){
+ .five ul li:hover{
     background-color: #5046E6;
     color: white;
+    transform: 0.3s;
  }
- /* .six{
-    width: 100px;
-    height: 30px;
-    border-radius: 4px;
- }
- .six :hover{
-    background-color: blue;
-    color: white;
- } */
  .six a{
+    color: black;
     display: block;
     width: 100%;
     height: 46px;
@@ -243,58 +242,65 @@
     text-align: center;
     border-radius: 6px;
     text-decoration: none;
-	 background-color: #5046E6;
+	 transition: 0.8s;
+ }
+ .six a:hover{
+    background-color: #5046E6;
     color: white;
  }
 .seven{
-    padding-right: 56px;
-    height: 210px;
+       padding-right: 56px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 18px;
     border-bottom: 1px solid grey;
-
+    padding-bottom: 18px;
 }
 .eight{
-    height: 148px;
+    gap: 18px;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+	 padding-bottom: 18px;
+
 }
 .eight ul{
-    list-style-position: inside;
-    height: 116px;
+        list-style-position: inside;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 10px;
 }
 .nine{
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
+.two h5{
+	cursor:pointer;
+}
 .btm2{
-    background-color: #9e9e9e4a;
+	cursor:pointer;
+   background-color: #9e9e9e4a;
     width: 45%;
-    height: 130px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     border: 1px solid gray;
     border-radius: 6px;
+    padding: 10px 0px;
+    gap: 18px;
 }
 .fa-dollar-sign{
     border-radius: 50%;
     width: 24px;
     height: 24px;
     border: 2px solid black;
-    line-height: 24px;
     text-align: center;
+	   padding-top: 1px;
 }
 .fa-solid{
+		    padding-top: 1px;
     font-size: 18px;
     background-color: white;
 }
